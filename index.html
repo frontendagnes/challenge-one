@@ -3,12 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-   
+    <main>
+        <div class = "head">
+            <img src="img/lizard.png" class="lizard"/>
+            <img src="img/logo.png" class="logo" />
+        </div>
+        <article class = "register-form">
+            <h3>Register Form</h3>
+            <form>
+                <div class="input-div">
+                    <Label for="username"><i class="fas fa-user"></i></Label>
+                    <input type ="text" id="username" class="input-txt" placeholder="Username">
+                </div>
+                <div class="input-div">
+                    <Label for="password"><i class="fas fa-unlock-alt"></i></Label>
+                    <input type="password" id="password" class="input-txt" placeholder="Password">
+                </div>
+                <div class="input-div">
+                    <Label for="confirm-password"><i class="fas fa-unlock-alt"></i></Label>
+                    <input type="password" id="confirm-password" class="input-txt" placeholder="Confirm Password">
+                </div>
+                <div class="input-div">
+                    <Label for="email"><i class="fas fa-envelope"></i></Label>
+                    <input type="email" id="email" class="input-txt" placeholder="Email">
+                </div>
+                <div class="select-div">
+                    <Label for="location"><i class="fas fa-map-marker-alt"></i></Label>
+                    <select id="location">
+                        <option> --- </option>
+                        <option value="warszawa">Warszawa</option>
+                        <option value="krakow">Kraków</option>
+                        <option value="zakopane">Zakopane</option>
+                        <option value="poznan">Poznań</option>
+                        <option value="jelenie-gora">Jelenie Góra</option>
+                        <option value="zlotoryja">Złtoryja</option>
+                    </select>
+                </div>
+                <div class = "check-div">
+                    <input type="checkbox" id="confirm-things"> <label for="confirm-things">have read and accept the terms od use</label>
+                </div>
+                <button type="submit" class="btn-submit">Sigin up</button>
+            </form>
+        </article>
+        <article class="sign-in">
+            <h3>Sign in Form</h3>
+            <form>
+                <div class="input-div">
+                    <Label for="username1"><i class="fas fa-user"></i></Label>
+                    <input type ="text" id="username1" class="input-txt" placeholder="Username">
+                </div>
+                <div class="input-div">
+                    <Label for="password1"><i class="fas fa-unlock-alt"></i></Label>
+                    <input type="password" id="password1" class="input-txt" placeholder="Password">
+                </div>
+                <button type="submit" class="btn-submit">Sigin in</button>
+            </form>
+        </article>
+        <article class="recorver-form">
+            <h3>Recorver Form</h3>
+            <form>
+                <div class="input-div">
+                    <Label for="email1"><i class="fas fa-envelope"></i></Label>
+                    <input type="email" id="email1" class="input-txt" placeholder="Enter your Email">
+                </div>
+                <div class="input-div">
+                    <label for="phone"><i class="fas fa-tty"></i></label>
+                    <input type="tel" id="phone" class="input-txt" placeholder="Enter your Phone number">
+                </div>
+                <button type="submit" class="btn-submit">Send</button>
+                <button type="submit" class="btn-submit">Done</button>
+            </form>
+        </article>
+        <article class = "subscribe-form">
+            <h3>Subscribe Form</h3>
+            <form>
+                <div class="input-div">
+                    <label for = "email2"><i class="fas fa-envelope"></i></label>
+                    <input type="email" id = "email2" class="input-txt" placeholder="Enter your Email"> 
+                </div>
+                <button type="submit" class="btn-submit">Subscribe</button>
+                <button type="submit" class="btn-submit">No, Thanks</button>
+            </form>
+        </article>
+        <article class="send-email">
+                <h3>Send Email</h3>
+                <form>
+                <div class="input-div">
+                    <Label for="username2"><i class="fas fa-user"></i></Label>
+                    <input type ="text" id="username2" class="input-txt" placeholder="Your Name">
+               </div>
+                <div class="input-div">
+                    <Label for="email3"><i class="fas fa-envelope"></i></Label>
+                    <input type="email" id="email3" class="input-txt" placeholder="Enter your Email">
+                </div>
+                <textarea class="text-email" placeholder="Type your message ..."></textarea>
+                <div class = "check-div">
+                    <input type="checkbox" id="send-copy"> 
+                    <label for="send-copy">Send a copy to my Email</label>
+                </div>
+                <button type="submit" class="btn-submit">Send Email</button>
+            </form>
+        </article>
+        <div class="foto">
+            <img src="img/lizard.png">
+            <img src="img/logo.png" >
+            <span>www.mosteralb.com</span>
+        </div>
+    </main>
 </body>
 </html>
