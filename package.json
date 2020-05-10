@@ -1,0 +1,19 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "Strona z Formularzami",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zabula81/challange-1.git"
+  },
+  "author": "Agnieszka Kamińska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zabula81/challange-1/issues"
+  },
+  "homepage": "https://github.com/zabula81/challange-1#readme"
+}
