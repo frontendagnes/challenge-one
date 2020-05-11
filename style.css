@@ -23,7 +23,7 @@ form{
     -moz-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
     margin-top: 45px;
-}
+ }
 
 h3{
     text-align: center;
@@ -62,8 +62,8 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
     margin-bottom: 20px;
+    border-radius: 3px;
 }
 .input-txt{
     box-sizing: border-box;
@@ -86,6 +86,7 @@ textarea{
     border-radius: 5px;
     padding-top: 15px;
     padding-left: 18px;
+    margin-bottom: 15px;
     background-color:#f8f8f8;
 }
 .register-form{
@@ -131,11 +132,13 @@ textarea{
     letter-spacing: 1px;
     border: 1px solid #74a322;
     text-shadow: 2px 2px 2px #000000;
+    height: 45px;
+    cursor: pointer;
 }
 
 .btn-sign-up{
     width: 340px;
-    height: 45px;
+    
     
 }
 label{
@@ -144,7 +147,8 @@ label{
 }
 
 #confirm-things,
-#send-copy{
+#send-copy,
+#sign-check{
     display: none;
 }
 input[type = checkbox] + label{
@@ -183,6 +187,33 @@ input[type=checkbox]:checked:disabled + label:before{
     background-color: #cccccc;
     border-color: #b6b6b6;
 }
+.wap-check{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
 .check-div-sign{
-    width:40%;
+    width:60%;
+    height: 100%;
+    
+}
+.btn-sign-in{
+    width: 40%;
+}
+.recovery-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rec-send,
+.btn-subscribe{
+    width: 45%;
+}
+.rec-done{
+    width: 45%;
+    background-color: #bcdb97;
+}
+.btn-no{
+    width: 45%;
+    background-color: #f4495b;
 }

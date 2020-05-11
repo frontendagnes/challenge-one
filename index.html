@@ -45,9 +45,9 @@
                         <option value="jelenie-gora">Jelenie Góra</option>
                         <option value="zlotoryja">Złtoryja</option>
                     </select>
-                </div>
+                </div>        
                 <div class = "check-div">
-                    <input type="checkbox" id="confirm-things" checked> <label for="confirm-things" class="confirm-things">I have read and accept the terms od use</label>
+                    <input type="checkbox" id="confirm-things" checked> <label for="confirm-things" class="confirm-things">I have read and accept the terms of use</label>
                 </div>
                 <button type="submit" class="btn-submit btn-sign-up">Sigin up</button>
             </form>
@@ -63,10 +63,12 @@
                     <Label for="password1"><i class="fas fa-unlock-alt"></i></Label>
                     <input type="password" id="password1" class="input-txt" placeholder="Password">
                 </div>
+            <div class="wap-check">
                 <div class = "check-div-sign">
-                    <input type="checkbox" id="confirm-things" checked> <label for="confirm-things" class="confirm-things">Remember me</label>
+                    <input type="checkbox" id="sign-check" checked> <label for="sign-check" class="confirm-things">Remember me</label>
                 </div>
-                <button type="submit" class="btn-submit">Sigin in</button>
+                <button type="submit" class="btn-submit btn-sign-in">Sigin in</button>
+            </div>
             </form>
         </article>
         <article class="recorver-form">
@@ -80,8 +82,10 @@
                     <label for="phone"><i class="fas fa-tty"></i></label>
                     <input type="tel" id="phone" class="input-txt" placeholder="Enter your Phone number">
                 </div>
-                <button type="submit" class="btn-submit">Send</button>
-                <button type="submit" class="btn-submit" disabled>Done</button>
+            <div class = "recovery-btn">
+                <button type="submit" class="btn-submit rec-send">Send</button>
+                <button type="submit" class="btn-submit rec-done" disabled>Done</button>
+            </div>
             </form>
         </article>
         <article class = "subscribe-form">
@@ -91,8 +95,10 @@
                     <label for = "email2"><i class="fas fa-envelope"></i></label>
                     <input type="email" id = "email2" class="input-txt" placeholder="Enter your Email"> 
                 </div>
-                <button type="submit" class="btn-submit">Subscribe</button>
-                <button type="submit" class="btn-submit">No, Thanks</button>
+            <div class = "recovery-btn">
+                <button type="submit" class="btn-submit btn-subscribe">Subscribe</button>
+                <button type="submit" class="btn-submit btn-no">No, Thanks</button>
+            </div>
             </form>
         </article>
         <article class="send-email">
@@ -108,10 +114,9 @@
                 </div>
                 <textarea class="text-email" placeholder="Type your message ..."></textarea>
                 <div class = "check-div">
-                    <input type="checkbox" id="send-copy"> 
-                    <label for="send-copy">Send a copy to my Email</label>
+                    <input type="checkbox" id="send-copy" checked> <label for="send-copy" class="confirm-things">Send a copy to my Email</label>
                 </div>
-                <button type="submit" class="btn-submit">Send Email</button>
+                <button type="submit" class="btn-submit btn-sign-up">Send Email</button>
             </form>
         </article>
         <div class="foto">
