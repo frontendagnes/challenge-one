@@ -159,9 +159,7 @@ label{
 #sign-check{
     display: none;
 }
-.white-border{
 
-}
 input[type = checkbox] + label{
     position: relative;
     padding-left:35px;
@@ -173,19 +171,24 @@ input[type=checkbox] + label:before{
     position: absolute;
     content: "";
     display: block; /* element blokowy, aby móc nadać odpowiednie wymiary */
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     top: 0; 
     left: 0;
     transition: all .4s ease;
-    -webkit-transition: all .7s ease;
+    -webkit-transition: all .5s ease;
     background-color: #ffffff;
-    border: 2px solid #808080;
-    border-radius: 3px;
+    border: 5px solid #ffffff;
+    border-radius: 4px;
     padding: 4px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75);
+}
+input[type=checkbox] + label:hover::before{
+    background-color: #cecece;;
 }
 input[type=checkbox]:checked + label:before{
-    border-radius: 8px;
     background-color: #97d230;
   
 }
@@ -222,6 +225,7 @@ input[type=checkbox]:checked:disabled + label:before{
 .rec-done{
     width: 45%;
     background-color: #bcdb97;
+    cursor: not-allowed;
 }
 .btn-no{
     width: 45%;
