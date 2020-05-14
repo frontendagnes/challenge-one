@@ -1,34 +1,99 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
-
-}
-main{
-    position: relative;
-    padding-bottom: 60px;
-    background:url('/img/tlo.jpg');
+    background: url('/img/tlo.jpg');
     background-size: cover;
-    min-height: 1400px;
 }
 
-i{
+/* GRID */
+main {
+    display: grid;
+    grid-template-columns: 85px repeat(15, 75px);
+    grid-template-rows: repeat(19, 75px);
+    gap: 1px 1px;
+    grid-template-areas: ". . . . . . . . . . . . ."
+    ". . . . lizard . logo logo logo logo . . ."
+    ". . . . . . . . . . . . ."
+    ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
+    ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
+    ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
+    ". register-form register-form register-form register-form register-form . . . . . . ."
+    ". register-form register-form register-form register-form register-form . . . . . . ."
+    ". register-form register-form register-form register-form register-form . . recovery-form recovery-form recovery-form recovery-form recovery-form "
+    ". . . . . . . . recovery-form recovery-form recovery-form recovery-form recovery-form "
+    ". send-email send-email send-email send-email send-email . . recovery-form recovery-form recovery-form recovery-form recovery-form "
+    ". send-email send-email send-email send-email send-email . . . . . . ."
+    ". send-email send-email send-email send-email send-email . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form "
+    ". send-email send-email send-email send-email send-email . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form "
+    ". send-email send-email send-email send-email send-email . . . . . . ."
+    ". send-email send-email send-email send-email send-email . . . . . . ."
+    ". . . . . . . . lizard-bottom logo-bottom logo-bottom logo-bottom logo-bottom "
+    ". . . . . . . . . . . . ."
+    ". . . . . . . .  link-bottom link-bottom link-bottom link-bottom ."
+    ". . . . . . . . . . . . .";
+}
+
+.lizard {
+    grid-area: lizard;
+    width: 118px;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.sign-in {
+    grid-area: sign-in;
+}
+
+.register-form {
+    grid-area: register-form;
+}
+
+.send-email {
+    grid-area: send-email;
+}
+
+.recorver-form {
+    grid-area: recovery-form;
+}
+
+.subscribe-form {
+    grid-area: subscribe-form;
+}
+
+.lizard-bottom {
+    grid-area: lizard-bottom;
+}
+
+.logo-bottom {
+    grid-area: logo-bottom;
+}
+
+.link-bottom {
+    grid-area: link-bottom;
+}
+
+/* Konic Grid */
+i {
     width: 29px;
     height: 25px;
     color: #afafaf;
 }
-form{
+
+form {
     background-color: #f4f4f4;
     padding: 20px;
     /* border-radius: 5px; */
-    -webkit-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 0px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 0px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 0px 20px rgba(0, 0, 0, 0.3);
     margin-top: 45px;
- }
+}
 
-h3{
+h3 {
     text-align: center;
     color: #ffffff;
     font-size: 25px;
@@ -36,31 +101,33 @@ h3{
     text-shadow: 2px 2px 2px #000000;
     font-weight: 100;
 }
-.lizard{
+
+/* .lizard{
     position: absolute;
     top:55px;
     left:350px;
     width: 118px;
 }
 .logo{
-    position: absolute;
+
     height: 75px;
     width: 300px;
     top:90px;
     left:488px;
 }
 .link{
-    position: absolute;
+ 
     left:488px;
     top:155px;
     width: 85px;
     height: 7px;
 }
 article{
-  width: 380px;
+  width: 30%;
+  height: auto;
     
-}
-.input-div{
+} */
+.input-div {
     height: 40px;
     border: 1px solid #808080;
     background-color: #f4f4f4;
@@ -71,25 +138,27 @@ article{
     border-radius: 3px;
 }
 
-.input-txt{
+.input-txt {
     box-sizing: border-box;
     background-color: #f8f8f8;
     border: none;
     height: 30px;
     width: 270px;
-    border-left: 1px solid rgba(0,0,0,0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
     padding-left: 20px;
     font-size: 18px;
 }
-.input-txt::placeholder{
+
+.input-txt::placeholder {
     color: #afafaf;
 }
-#location{
+
+#location {
     width: 270px;
     color: #afafaf;
 }
 
-textarea{
+textarea {
     box-sizing: border-box;
     height: 230px;
     width: 340px;
@@ -97,44 +166,20 @@ textarea{
     padding-top: 15px;
     padding-left: 18px;
     margin-bottom: 15px;
-    background-color:#f8f8f8;
+    background-color: #f8f8f8;
 }
-.register-form{
-    position: absolute;
-    left: 66px;
-    top: 191px;
-}
-.sign-in{
-    position: absolute;
-    left: 565px;
-    top:191px;
-}
-.recorver-form{
-    position: absolute;
-    left: 564px;
-    top:530px;
-}
-.subscribe-form{
-    position: absolute;
-    left:565px;
-    top:875px
-}
-.send-email{
-    position: absolute;
-    left:67px;
-    top:800px;
-}
-.foto{
+
+/* .foto{
     position: absolute;
     left:600px;
     top:1161px;
     margin-bottom: 80px;
-}
-.check-div{
+} */
+.check-div {
     margin-bottom: 15px;
 }
 
-.btn-submit{
+.btn-submit {
     background-color: #93d02b;
     color: white;
     font-size: 18px;
@@ -146,34 +191,37 @@ textarea{
     cursor: pointer;
 }
 
-.btn-sign-up{
-    width: 340px;   
+.btn-sign-up {
+    width: 100%;
 }
-label{
+
+label {
     line-height: 25px;
     color: #afafaf;
 }
 
 #confirm-things,
 #send-copy,
-#sign-check{
+#sign-check {
     display: none;
 }
 
-input[type = checkbox] + label{
+input[type=checkbox]+label {
     position: relative;
-    padding-left:35px;
+    padding-left: 35px;
     cursor: pointer;
     display: flex;
     flex-flow: row wrap;
 }
-input[type=checkbox] + label:before{
+
+input[type=checkbox]+label:before {
     position: absolute;
     content: "";
-    display: block; /* element blokowy, aby móc nadać odpowiednie wymiary */
+    display: block;
+    /* element blokowy, aby móc nadać odpowiednie wymiary */
     width: 10px;
     height: 10px;
-    top: 0; 
+    top: 0;
     left: 0;
     transition: all .4s ease;
     -webkit-transition: all .5s ease;
@@ -181,68 +229,88 @@ input[type=checkbox] + label:before{
     border: 5px solid #ffffff;
     border-radius: 4px;
     padding: 4px;
-    -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
 }
-input[type=checkbox] + label:hover::before{
-    background-color: #cecece;;
+
+input[type=checkbox]+label:hover::before {
+    background-color: #cecece;
+    ;
 }
-input[type=checkbox]:checked + label:before{
+
+input[type=checkbox]:checked+label:before {
     background-color: #97d230;
-  
+
 }
-input[type=checkbox]:disabled + label:before{
+
+input[type=checkbox]:disabled+label:before {
     background-color: #b6b6b6;
     border-color: #b6b6b6;
 }
-input[type=checkbox]:checked:disabled + label:before{
+
+input[type=checkbox]:checked:disabled+label:before {
     background-color: #cccccc;
     border-color: #b6b6b6;
 }
-.wap-check{
+
+.wap-check {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   }
-.check-div-sign{
-    width:60%;
-    height: 100%;
-    
 }
-.btn-sign-in{
+
+.check-div-sign {
+    width: 60%;
+    height: 100%;
+
+}
+
+.btn-sign-in {
     width: 40%;
 }
-.recovery-btn{
+
+.recovery-btn {
     display: flex;
     justify-content: space-around;
 }
 
 .rec-send,
-.btn-subscribe{
+.btn-subscribe {
     width: 45%;
 }
-.rec-done{
+
+.rec-done {
     width: 45%;
     background-color: #bcdb97;
     cursor: not-allowed;
 }
-.btn-no{
+
+.btn-no {
     width: 45%;
     background-color: #f4495b;
     border-color: #f52338;
 }
-.lizard-bottom{
-     width: 80px;
+
+.lizard-bottom {
+    width: 80px;
 }
-.logo-bottom{
+
+.logo-bottom {
     width: 240px;
     height: 65px;
 }
-.link-bottom{
-    position: absolute;
+
+.link-bottom {
     width: 280px;
     height: 25px;
-    top:110px;
+    top: 110px;
     right: -10px;
+}
+
+@media (max-width: 950px) {
+
+   
+
+
 }

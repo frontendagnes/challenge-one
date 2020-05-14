@@ -1,5 +1,5 @@
 {
-  "name": "challenge",
+  "name": "challenge-one",
   "version": "1.0.0",
   "description": "Strona z Formularzami",
   "main": "script.js",
@@ -8,12 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zabula81/challange-1.git"
+    "url": "git+https://github.com/zabula81/challeng-one.git"
   },
   "author": "Agnieszka Kamińska",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zabula81/challange-1/issues"
+    "url": "https://github.com/zabula81/challeng-one/issues"
   },
-  "homepage": "https://github.com/zabula81/challange-1#readme"
+  "homepage": "https://github.com/zabula81/challeng-one#readme",
+
 }
