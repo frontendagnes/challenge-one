@@ -10,8 +10,9 @@ body {
 /* GRID */
 main {
     display: grid;
+    /* grid-template-columns: 85px repeat(auto-fill, minmax (75px, 1fr)); */
     grid-template-columns: 85px repeat(15, 75px);
-    grid-template-rows: repeat(19, 75px);
+    grid-template-rows: repeat(20, 75px);
     gap: 1px 1px;
     grid-template-areas: ". . . . . . . . . . . . ."
     ". . . . lizard . logo logo logo logo . . ."
@@ -23,6 +24,7 @@ main {
     ". register-form register-form register-form register-form register-form . . . . . . ."
     ". register-form register-form register-form register-form register-form . . recovery-form recovery-form recovery-form recovery-form recovery-form "
     ". . . . . . . . recovery-form recovery-form recovery-form recovery-form recovery-form "
+    ". . . . . . . . recovery-form recovery-form recovery-form recovery-form recovery-form "
     ". send-email send-email send-email send-email send-email . . recovery-form recovery-form recovery-form recovery-form recovery-form "
     ". send-email send-email send-email send-email send-email . . . . . . ."
     ". send-email send-email send-email send-email send-email . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form "
@@ -30,7 +32,6 @@ main {
     ". send-email send-email send-email send-email send-email . . . . . . ."
     ". send-email send-email send-email send-email send-email . . . . . . ."
     ". . . . . . . . lizard-bottom logo-bottom logo-bottom logo-bottom logo-bottom "
-    ". . . . . . . . . . . . ."
     ". . . . . . . .  link-bottom link-bottom link-bottom link-bottom ."
     ". . . . . . . . . . . . .";
 }
@@ -38,6 +39,7 @@ main {
 .lizard {
     grid-area: lizard;
     width: 118px;
+    
 }
 
 .logo {
@@ -54,6 +56,7 @@ main {
 
 .send-email {
     grid-area: send-email;
+    /* align-self: end; */
 }
 
 .recorver-form {
@@ -70,10 +73,14 @@ main {
 
 .logo-bottom {
     grid-area: logo-bottom;
+    align-self: end;
+        
 }
 
 .link-bottom {
     grid-area: link-bottom;
+    align-self: end;
+    justify-self: end;
 }
 
 /* Konic Grid */
@@ -102,31 +109,6 @@ h3 {
     font-weight: 100;
 }
 
-/* .lizard{
-    position: absolute;
-    top:55px;
-    left:350px;
-    width: 118px;
-}
-.logo{
-
-    height: 75px;
-    width: 300px;
-    top:90px;
-    left:488px;
-}
-.link{
- 
-    left:488px;
-    top:155px;
-    width: 85px;
-    height: 7px;
-}
-article{
-  width: 30%;
-  height: auto;
-    
-} */
 .input-div {
     height: 40px;
     border: 1px solid #808080;
@@ -169,12 +151,6 @@ textarea {
     background-color: #f8f8f8;
 }
 
-/* .foto{
-    position: absolute;
-    left:600px;
-    top:1161px;
-    margin-bottom: 80px;
-} */
 .check-div {
     margin-bottom: 15px;
 }
@@ -308,9 +284,52 @@ input[type=checkbox]:checked:disabled+label:before {
     right: -10px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 800px) {
 
-   
+main{
+    grid-template-columns: repeat(8, 75px);
+    grid-template-rows: repeat(37, 75px);
+    gap: 1px 1px;
+    grid-template-areas:
+    " . . . . . . . . "
+    " . lizard . logo logo logo . . " 
+    " . . . . . . . . "
+    " . .  register-form register-form register-form register-form register-form . "
+    " . .  register-form register-form register-form register-form register-form . "  
+    " . .  register-form register-form register-form register-form register-form . "  
+    " . .  register-form register-form register-form register-form register-form . "  
+    " . .  register-form register-form register-form register-form register-form . "  
+    " . .  register-form register-form register-form register-form register-form . " 
+    " . . . . . . . . " 
+    " . . . . . . . . "
+    " . . sign-in sign-in sign-in sign-in sign-in . " 
+    " . . sign-in sign-in sign-in sign-in sign-in . "  
+    " . . sign-in sign-in sign-in sign-in sign-in . " 
+    " . . . . . . . . " 
+    " . . . . . . . . " 
+    " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "      
+    " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "  
+    " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "  
+    " . . . . . . . . " 
+    " . . . . . . . . " 
+    " . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form . "  
+    " . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form . "  
+    " . . . . . . . . " 
+    " . . . . . . . . "
+    " . . send-email send-email send-email send-email send-email . " 
+    " . . send-email send-email send-email send-email send-email . " 
+    " . . send-email send-email send-email send-email send-email . " 
+    " . . send-email send-email send-email send-email send-email . " 
+    " . . send-email send-email send-email send-email send-email . " 
+    " . . send-email send-email send-email send-email send-email . " 
+    " . . send-email send-email send-email send-email send-email . " 
+    " . . . . . . . . " 
+    " . . . . . . . . "
+    " . . lizard-bottom logo-bottom logo-bottom logo-bottom  . ."
+    " . . link-bottom link-bottom link-bottom link-bottom . . " 
+    " . . . . . . . . "
 
+    ;
 
+}
 }
