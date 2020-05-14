@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
-    background: url('/img/tlo.jpg');
+    background: url('img/tlo.jpg');
     background-size: cover;
 }
 button:disabled{
