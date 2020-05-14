@@ -6,7 +6,7 @@
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,108.000000) scale(0.100000,-0.100000)"
-fill="#000000" fill-opacity="0.5" stroke="none">
+fill="#000000" fill-opacity="0.3" stroke="none">
 <path class="svg-lizard" d="M431 1064 c-182 -49 -338 -207 -386 -391 -19 -73 -19 -203 0 -276 39
 -151 147 -283 289 -353 l80 -39 166 0 166 0 80 39 c142 70 250 202 289 353 19
 73 19 203 0 276 -48 186 -205 343 -390 392 -74 19 -222 19 -294 -1z m204 -33
