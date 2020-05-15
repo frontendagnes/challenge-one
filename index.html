@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
     <main>
-        <img src="svg/lizard.svg" class="lizard"/>
-        <!-- <img src="img/lizard.png" class="lizard"/> -->
+        <img src="svg/lizard.svg" class="lizard" />
         <img src="svg/logo.svg" class="logo" />
-        <!-- <img src="svg/link.svg" class = "link" /> -->
-        <article class = "register-form">
+        <article class="register-form">
             <h3>Register Form</h3>
             <form>
                 <div class="input-div">
                     <Label for="username"><i class="fas fa-user"></i></Label>
-                    <input type ="text" id="username" class="input-txt" placeholder="Username">
+                    <input type="text" id="username" class="input-txt" placeholder="Username">
                 </div>
                 <div class="input-div">
                     <Label for="password"><i class="fas fa-unlock-alt"></i></Label>
@@ -44,9 +44,10 @@
                         <option value="jelenie-gora">Jelenie Góra</option>
                         <option value="zlotoryja">Złtoryja</option>
                     </select>
-                </div>        
-                <div class = "check-div">
-                    <input type="checkbox" id="confirm-things"> <label for="confirm-things" class="confirm-things"><span class="white-border"></span> have read and accept the terms of use</label>
+                </div>
+                <div class="check-div">
+                    <input type="checkbox" id="confirm-things"> <label for="confirm-things" class="confirm-things"><span
+                            class="white-border"></span> have read and accept the terms of use</label>
                 </div>
                 <button type="submit" class="btn-submit btn-sign-up">Sigin up</button>
             </form>
@@ -56,24 +57,25 @@
             <form>
                 <div class="input-div">
                     <Label for="username1"><i class="fas fa-user"></i></Label>
-                    <input type ="text" id="username1" class="input-txt" placeholder="Username">
+                    <input type="text" id="username1" class="input-txt" placeholder="Username">
                 </div>
                 <div class="input-div">
                     <Label for="password1"><i class="fas fa-unlock-alt"></i></Label>
                     <input type="password" id="password1" class="input-txt" placeholder="Password">
                 </div>
-            <div class="wap-check">
-                <div class = "check-div-sign">
-                    <input type="checkbox" id="sign-check"> <label for="sign-check" class="confirm-things">Remember me</label>
+                <div class="wap-check">
+                    <div class="check-div-sign">
+                        <input type="checkbox" id="sign-check"> <label for="sign-check" class="confirm-things">Remember
+                            me</label>
+                    </div>
+                    <button type="submit" class="btn-submit btn-sign-in">Sigin in</button>
                 </div>
-                <button type="submit" class="btn-submit btn-sign-in">Sigin in</button>
-            </div>
             </form>
         </article>
         <article class="recorver-form">
             <h3>Recorver Form</h3>
             <form>
-                  <div class="input-div">
+                <div class="input-div">
                     <Label for="email1"><i class="fas fa-envelope"></i></Label>
                     <input type="email" id="email1" class="input-txt" placeholder="Enter your Email">
                 </div>
@@ -81,46 +83,48 @@
                     <label for="phone"><i class="fas fa-tty"></i></label>
                     <input type="tel" id="phone" class="input-txt" placeholder="Enter your Phone number">
                 </div>
-            <div class = "recovery-btn">
-                <button type="submit" class="btn-submit rec-send">Send</button>
-                <button type="submit" class="btn-submit rec-done" disabled>Done</button>
-            </div>
+                <div class="recovery-btn">
+                    <button type="submit" class="btn-submit rec-send">Send</button>
+                    <button type="submit" class="btn-submit rec-done" disabled>Done</button>
+                </div>
             </form>
         </article>
-        <article class = "subscribe-form">
+        <article class="subscribe-form">
             <h3>Subscribe Form</h3>
             <form>
                 <div class="input-div">
-                    <label for = "email2"><i class="fas fa-envelope"></i></label>
-                    <input type="email" id = "email2" class="input-txt" placeholder="Enter your Email"> 
+                    <label for="email2"><i class="fas fa-envelope"></i></label>
+                    <input type="email" id="email2" class="input-txt" placeholder="Enter your Email">
                 </div>
-            <div class = "recovery-btn">
-                <button type="submit" class="btn-submit btn-subscribe">Subscribe</button>
-                <button type="submit" class="btn-submit btn-no">No, Thanks</button>
-            </div>
+                <div class="recovery-btn">
+                    <button type="submit" class="btn-submit btn-subscribe">Subscribe</button>
+                    <button type="submit" class="btn-submit btn-no">No, Thanks</button>
+                </div>
             </form>
         </article>
         <article class="send-email">
-                <h3>Send Email</h3>
-                <form>
+            <h3>Send Email</h3>
+            <form>
                 <div class="input-div">
                     <Label for="username2"><i class="fas fa-user"></i></Label>
-                    <input type ="text" id="username2" class="input-txt" placeholder="Your Name">
-               </div>
+                    <input type="text" id="username2" class="input-txt" placeholder="Your Name">
+                </div>
                 <div class="input-div">
                     <Label for="email3"><i class="fas fa-envelope"></i></Label>
                     <input type="email" id="email3" class="input-txt" placeholder="Enter your Email">
                 </div>
                 <textarea class="text-email" placeholder="Type your message ..."></textarea>
-                <div class = "check-div">
-                    <input type="checkbox" id="send-copy"> <label for="send-copy" class="confirm-things">Send a copy to my Email</label>
+                <div class="check-div">
+                    <input type="checkbox" id="send-copy"> <label for="send-copy" class="confirm-things">Send a copy to
+                        my Email</label>
                 </div>
                 <button type="submit" class="btn-submit btn-sign-up">Send Email</button>
             </form>
         </article>
         <img src="svg/lizard.svg" class="lizard-bottom">
-        <img src="svg/logo.svg" class = "logo-bottom">
-        <img src="svg/link.svg" class = "link-bottom">
+        <img src="svg/logo.svg" class="logo-bottom">
+        <img src="svg/link.svg" class="link-bottom">
     </main>
 </body>
+
 </html>

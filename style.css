@@ -6,36 +6,37 @@ body {
     background: url('img/tlo.jpg');
     background-size: cover;
 }
-button:disabled{
+
+button:disabled {
     cursor: not-allowed;
 }
+
 /* GRID */
 main {
     display: grid;
-    /* grid-template-columns: 85px repeat(auto-fill, minmax (75px, 1fr)); */
     grid-template-columns: 85px repeat(15, 75px);
     grid-template-rows: repeat(20, 75px);
     gap: 1px 1px;
     grid-template-areas: ". . . . . . . . . . . . ."
-    ". . . . lizard . logo logo logo logo . . ."
-    ". . . . . . . . . . . . ."
-    ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
-    ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
-    ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
-    ". register-form register-form register-form register-form register-form . . . . . . ."
-    ". register-form register-form register-form register-form register-form . . . . . . ."
-    ". register-form register-form register-form register-form register-form . . recovery-form recovery-form recovery-form recovery-form recovery-form "
-    ". . . . . . . . recovery-form recovery-form recovery-form recovery-form recovery-form "
-    ". . . . . . . . recovery-form recovery-form recovery-form recovery-form recovery-form "
-    ". send-email send-email send-email send-email send-email . . recovery-form recovery-form recovery-form recovery-form recovery-form "
-    ". send-email send-email send-email send-email send-email . . . . . . ."
-    ". send-email send-email send-email send-email send-email . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form "
-    ". send-email send-email send-email send-email send-email . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form "
-    ". send-email send-email send-email send-email send-email . . . . . . ."
-    ". send-email send-email send-email send-email send-email . . . . . . ."
-    ". . . . . . . . lizard-bottom logo-bottom logo-bottom logo-bottom logo-bottom "
-    ". . . . . . . .  link-bottom link-bottom link-bottom link-bottom ."
-    ". . . . . . . . . . . . .";
+        ". . . . lizard . logo logo logo logo . . ."
+        ". . . . . . . . . . . . ."
+        ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
+        ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
+        ". register-form register-form register-form register-form register-form . . sign-in sign-in sign-in sign-in sign-in "
+        ". register-form register-form register-form register-form register-form . . . . . . ."
+        ". register-form register-form register-form register-form register-form . . . . . . ."
+        ". register-form register-form register-form register-form register-form . . recovery-form recovery-form recovery-form recovery-form recovery-form "
+        ". . . . . . . . recovery-form recovery-form recovery-form recovery-form recovery-form "
+        ". . . . . . . . recovery-form recovery-form recovery-form recovery-form recovery-form "
+        ". send-email send-email send-email send-email send-email . . recovery-form recovery-form recovery-form recovery-form recovery-form "
+        ". send-email send-email send-email send-email send-email . . . . . . ."
+        ". send-email send-email send-email send-email send-email . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form "
+        ". send-email send-email send-email send-email send-email . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form "
+        ". send-email send-email send-email send-email send-email . . . . . . ."
+        ". send-email send-email send-email send-email send-email . . . . . . ."
+        ". . . . . . . . lizard-bottom logo-bottom logo-bottom logo-bottom logo-bottom "
+        ". . . . . . . .  link-bottom link-bottom link-bottom link-bottom ."
+        ". . . . . . . . . . . . .";
 }
 
 .lizard {
@@ -58,7 +59,6 @@ main {
 
 .send-email {
     grid-area: send-email;
-    /* align-self: end; */
 }
 
 .recorver-form {
@@ -76,7 +76,7 @@ main {
 .logo-bottom {
     grid-area: logo-bottom;
     align-self: end;
-        
+
 }
 
 .link-bottom {
@@ -212,7 +212,6 @@ input[type=checkbox]+label:before {
 
 input[type=checkbox]+label:hover::before {
     background-color: #cecece;
-    ;
 }
 
 input[type=checkbox]:checked+label:before {
@@ -258,7 +257,7 @@ input[type=checkbox]:checked:disabled+label:before {
 
 .rec-done {
     width: 45%;
-    background-color: #bcdb97;    
+    background-color: #bcdb97;
 }
 
 .btn-no {
@@ -285,50 +284,47 @@ input[type=checkbox]:checked:disabled+label:before {
 
 @media (max-width: 800px) {
 
-main{
-    grid-template-columns: repeat(8, 75px);
-    grid-template-rows: repeat(37, 75px);
-    gap: 1px 1px;
-    grid-template-areas:
-    " . . . . . . . . "
-    " . lizard . logo logo logo . . " 
-    " . . . . . . . . "
-    " . .  register-form register-form register-form register-form register-form . "
-    " . .  register-form register-form register-form register-form register-form . "  
-    " . .  register-form register-form register-form register-form register-form . "  
-    " . .  register-form register-form register-form register-form register-form . "  
-    " . .  register-form register-form register-form register-form register-form . "  
-    " . .  register-form register-form register-form register-form register-form . " 
-    " . . . . . . . . " 
-    " . . . . . . . . "
-    " . . sign-in sign-in sign-in sign-in sign-in . " 
-    " . . sign-in sign-in sign-in sign-in sign-in . "  
-    " . . sign-in sign-in sign-in sign-in sign-in . " 
-    " . . . . . . . . " 
-    " . . . . . . . . " 
-    " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "      
-    " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "  
-    " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "  
-    " . . . . . . . . " 
-    " . . . . . . . . " 
-    " . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form . "  
-    " . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form . "  
-    " . . . . . . . . " 
-    " . . . . . . . . "
-    " . . send-email send-email send-email send-email send-email . " 
-    " . . send-email send-email send-email send-email send-email . " 
-    " . . send-email send-email send-email send-email send-email . " 
-    " . . send-email send-email send-email send-email send-email . " 
-    " . . send-email send-email send-email send-email send-email . " 
-    " . . send-email send-email send-email send-email send-email . " 
-    " . . send-email send-email send-email send-email send-email . " 
-    " . . . . . . . . " 
-    " . . . . . . . . "
-    " . . lizard-bottom logo-bottom logo-bottom logo-bottom  . ."
-    " . . link-bottom link-bottom link-bottom link-bottom . . " 
-    " . . . . . . . . "
-
-    ;
-
-}
+    main {
+        grid-template-columns: repeat(8, 75px);
+        grid-template-rows: repeat(37, 75px);
+        gap: 1px 1px;
+        grid-template-areas:
+            " . . . . . . . . "
+            " . lizard . logo logo logo . . "
+            " . . . . . . . . "
+            " . .  register-form register-form register-form register-form register-form . "
+            " . .  register-form register-form register-form register-form register-form . "
+            " . .  register-form register-form register-form register-form register-form . "
+            " . .  register-form register-form register-form register-form register-form . "
+            " . .  register-form register-form register-form register-form register-form . "
+            " . .  register-form register-form register-form register-form register-form . "
+            " . . . . . . . . "
+            " . . . . . . . . "
+            " . . sign-in sign-in sign-in sign-in sign-in . "
+            " . . sign-in sign-in sign-in sign-in sign-in . "
+            " . . sign-in sign-in sign-in sign-in sign-in . "
+            " . . . . . . . . "
+            " . . . . . . . . "
+            " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "
+            " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "
+            " . . recovery-form recovery-form recovery-form recovery-form recovery-form . "
+            " . . . . . . . . "
+            " . . . . . . . . "
+            " . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form . "
+            " . . subscribe-form subscribe-form subscribe-form subscribe-form subscribe-form . "
+            " . . . . . . . . "
+            " . . . . . . . . "
+            " . . send-email send-email send-email send-email send-email . "
+            " . . send-email send-email send-email send-email send-email . "
+            " . . send-email send-email send-email send-email send-email . "
+            " . . send-email send-email send-email send-email send-email . "
+            " . . send-email send-email send-email send-email send-email . "
+            " . . send-email send-email send-email send-email send-email . "
+            " . . send-email send-email send-email send-email send-email . "
+            " . . . . . . . . "
+            " . . . . . . . . "
+            " . . lizard-bottom logo-bottom logo-bottom logo-bottom  . ."
+            " . . link-bottom link-bottom link-bottom link-bottom . . "
+            " . . . . . . . . ";
+    }
 }
