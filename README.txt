@@ -1,7 +1,9 @@
 FROMULARZE
 
-Pomysł na projekt zaczerpnięty z grupy FB - Weekly Webdev Challenge - #chellenge 1
+Pomysł na projekt zaczerpnięty z grupy FB - Weekly Webdev Challenge - #challenge 1
 
 Strona została zrobiona w wersji responyswnej, z wykorzystaniem GRID CSS.
 
-Strna wykonana w technologi HTML + CSS.
+Strona wykonana w technologi HTML + CSS.
+
+live: https://zabula81.github.io/challenge-one/
